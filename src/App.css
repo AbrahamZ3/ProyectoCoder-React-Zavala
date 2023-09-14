@@ -1,38 +1,51 @@
-.App {
-  text-align: center;
+body {
+  font-family: 'Courier New', Courier, monospace;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* Estilos para el navbar */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.navbar-contenedor {
+  background-color: green;
+  display: block;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.titulo-navbar {
+  text-align: left;
+  font-size: 35px;
+  color: yellow;
+}
+
+.navbar {
+  font-size: 30px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  margin: 0 20px;
+}
+
+a {
+  text-decoration: none;
   color: white;
+  font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+a:hover {
+  color: red;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.icono-carrito {
+  display: flex;
+  justify-content: flex-end;
+
 }
