@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      <ItemListConteiner />
+      <ItemListConteiner saludo="Hola esta es mi pagina para coder react"/>
     </div>
   );
 }

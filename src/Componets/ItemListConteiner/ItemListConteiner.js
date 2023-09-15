@@ -2,13 +2,11 @@
 
 
 export function ItemListConteiner (props) {
-    return (
-   <div>
+   return (
+      <div>
 
-<h1>Esto es el contenido de mi pagina</h1>
+         <h1>{props.saludo}</h1>
 
-
-   </div>
-    );
-  };
-  
+      </div>
+   );
+};

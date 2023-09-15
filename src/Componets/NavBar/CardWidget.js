@@ -1,9 +1,13 @@
 
+import { AiOutlineShoppingCart } from 'react-icons/ai';
+
 export function CardWidget() {
 
     return (
         <div>
-            <h2 className="icono-carrito">  🛒 </h2>
+            <AiOutlineShoppingCart/>
+            <p>10</p>
+            
         </div>
     )
 }
