@@ -1,0 +1,58 @@
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.header__logo {
+    margin: 30px 0;
+    color: rgb(70, 50, 57);
+    font-size: 40px;
+}
+
+.navegacion {
+    background-color: rgb(198, 173, 148);
+    display: flex;
+
+    align-items: center;
+    
+    margin: 0 auto;
+    padding: 0 20px;
+    gap: 20px;
+
+}
+
+.navegacion__enlace {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    
+}
+
+.navegacion__enlace:hover {
+    color: rgb(62, 86, 65);
+}
+
+.carrito {
+   margin-left: auto;
+  
+   font-weight: bold;
+   font-size: 25px;
+   justify-content: end;
+}
+
+@media (max-width: 768px) {
+    .navegacion { 
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        text-align: center;
+    }
+}

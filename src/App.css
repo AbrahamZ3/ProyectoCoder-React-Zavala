@@ -1,51 +1,28 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after{
+  box-sizing: inherit;
+}
+
 body {
   font-family: 'Courier New', Courier, monospace;
+  background-color: rgb(127, 178, 133);
+  line-height: 1.5;
+  
+  
 }
 
-/* Estilos para el navbar */
-
-.navbar-contenedor {
-  background-color: green;
-  display: block;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 20px;
-}
-
-.titulo-navbar {
-  text-align: left;
-  font-size: 35px;
-  color: yellow;
-}
-
-.navbar {
-  font-size: 30px;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-}
-
-li {
-  margin: 0 20px;
+p {
+  font-size: 15px;
+  color: white;
 }
 
 a {
   text-decoration: none;
-  color: white;
-  font-weight: bold;
 }
 
-a:hover {
-  color: red;
-}
-
-.icono-carrito {
-  display: flex;
-  justify-content: flex-end;
-
+img {
+  max-width: 100%;
 }
