@@ -2,7 +2,6 @@ import './App.css';
 import { NavBar } from './Componets/NavBar/NavBar';
 import { ItemListConteiner } from './Componets/ItemListConteiner/ItemListConteiner';
 import { Nosotros } from './Componets/Nosotros.jsx';
-// import { Ofertas } from './Componets/Ofertas.jsx';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { ItemDetailConteiner } from './Componets/ItemDetailConteiner/ItemDetailConteiner';
 
