@@ -2,10 +2,10 @@ import ItemCount from "./ItemCount";
 import "./StylesIDC/ItemCount.css";
 
 
-export const ItemDetail = ({ producto }) => {
+const ItemDetail = ({producto}) => {
 
     const onAdd = (cantidad) => {
-        console.log(`compraste ${cantidad} del producto ${producto.nombre}`)
+        console.log(`Compraste ${cantidad} del producto ${producto.nombre}`)
     }
 
     return (
@@ -26,3 +26,4 @@ export const ItemDetail = ({ producto }) => {
     )
 }
 
+export default ItemDetail

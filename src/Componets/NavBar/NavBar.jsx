@@ -16,7 +16,7 @@ export function NavBar() {
 
         <Link className="navegacion__enlace" to="/">Tienda</Link>
         <Link className="navegacion__enlace" to="/nosotros">Nosotros</Link>
-        <Link className="navegacion__enlace" to="/">Ofertas</Link>
+        <Link className="navegacion__enlace" to="/">Categorias</Link>
 
 
 

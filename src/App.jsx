@@ -1,27 +1,27 @@
 import './App.css';
 import { NavBar } from './Componets/NavBar/NavBar';
-import { ItemListConteiner } from './Componets/ItemListConteiner/ItemListConteiner';
+import ItemListConteiner from './Componets/ItemListConteiner/ItemListConteiner';
 import { Nosotros } from './Componets/Nosotros.jsx';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { ItemDetailConteiner } from './Componets/ItemDetailConteiner/ItemDetailConteiner';
+import ItemDetailConteiner from './Componets/ItemDetailConteiner/ItemDetailConteiner';
 
 
 function App() {
   return (
-    
-      <BrowserRouter>
-        <NavBar />
 
-        <Routes>
-          <Route path='/' element={<ItemListConteiner  />} />
-          <Route path='/nosotros' element={<Nosotros />} />
-          <Route path='/detail/:id' element={<ItemDetailConteiner />} />
-        </Routes>
+    <BrowserRouter>
+      <NavBar />
 
-      </BrowserRouter>
+      <Routes>
+        <Route path='/' element={<ItemListConteiner />} />
+        <Route path='/nosotros' element={<Nosotros />} />
+        <Route path='/detail/:id' element={<ItemDetailConteiner />} />
+      </Routes>
 
-     
-   
+    </BrowserRouter>
+
+
+
   );
 }
 

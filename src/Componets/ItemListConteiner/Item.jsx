@@ -2,7 +2,7 @@ import './Item.css';
 import { Link } from 'react-router-dom';
 
 
-export const Item = ({ prod }) => {
+const Item = ({ prod }) => {
 
   return (
     <div>
@@ -17,4 +17,6 @@ export const Item = ({ prod }) => {
       </div>
     </div>
   )
-}
+};
+
+export default Item

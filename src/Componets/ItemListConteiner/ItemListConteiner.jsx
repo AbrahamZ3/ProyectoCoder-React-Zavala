@@ -2,19 +2,22 @@ import ItemList from "./ItemList";
 import './Item.css';
 import { getData } from "../../Mock/Data";
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
 
 
 
-export function ItemListConteiner(props) {
+const ItemListConteiner = (props) => {
 
-   const [productos, setProductos] = useState([]);
-   const { id } = useParams()
+   const [productos, setProductos] = useState([])
+
+  
+
    useEffect(() => {
       getData()
-         .then((res) => setProductos(res.find((item) => item.id === id)))
-         .catch((error) => console.log(error));
-   }, [id]);
+         .then((res) => setProductos(res))
+         .catch((error) => console.log(error))
+   }, []);
+
+ 
 
    console.log(productos)
 
@@ -29,3 +32,5 @@ export function ItemListConteiner(props) {
       </div>
    );
 };
+
+export default ItemListConteiner;

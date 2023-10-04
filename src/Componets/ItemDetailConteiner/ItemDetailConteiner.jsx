@@ -1,22 +1,26 @@
-import { useState, useEffect } from "react";
+import React,{ useState, useEffect } from "react";
 import { getData } from "../../Mock/Data";
-import {ItemDetail} from "./ItemDetail";
+import  ItemDetail  from "./ItemDetail";
 
 
-export const ItemDetailConteiner = () => {
+const ItemDetailConteiner = () => {
 
     const [producto, setProducto] = useState({})
+
     useEffect(() => {
         getData()
-            .then((res)=> setProducto(res[2]))
+            .then((res) => setProducto (res[3]))
+            // .then((res) => setProducto (res.find((item) => item.id === '02' )))
             .catch((error) => console.log(error))
     }, [])
+
     console.log(producto)
 
     return (
-       <>
-       < ItemDetail producto={producto} />
-       </>
+        <div>
+            <ItemDetail producto={producto} />
+        </div>
     )
 };
 
+export default ItemDetailConteiner;

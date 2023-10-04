@@ -2,7 +2,7 @@ import "./StylesIDC/ItemCount.css";
 import { useState } from "react";
 
 
-export const ItemCount = ({ inicial, stock, onAdd }) => {
+const ItemCount = ({ inicial, stock, onAdd }) => {
 
     const [numero, setNumero] = useState(inicial);
 
