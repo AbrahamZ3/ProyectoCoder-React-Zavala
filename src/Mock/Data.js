@@ -104,6 +104,6 @@ export const getData = () => {
             } else{
                 resuelve(productoFlores)
             }
-        }, 3000);
+        }, 1000);
     });
 }
