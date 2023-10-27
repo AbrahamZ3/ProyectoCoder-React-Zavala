@@ -1,0 +1,73 @@
+/* Estilos para el contenedor del formulario */
+form {
+    max-width: 50%;
+    /* Ajusta el ancho máximo del formulario según tus preferencias */
+    margin: 0 auto;
+    /* Centra el formulario en la pantalla */
+    padding: 20px;
+    /* Ajusta el espaciado interior según tus preferencias */
+    border: 1px solid #ccc;
+    /* Agrega un borde alrededor del formulario */
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    /* Cambia el color de fondo del formulario según tus preferencias */
+}
+
+/* Estilos para los títulos */
+.titulo-checkout,
+.titulo-formulario {
+    text-align: center;
+    /* Centra los títulos */
+}
+
+/* Estilos para los elementos del formulario */
+.input-formulario {
+    margin: 10px 0;
+    /* Ajusta el espaciado entre los elementos según tus preferencias */
+}
+
+label {
+    display: block;
+    /* Hace que las etiquetas ocupen una línea completa */
+    margin-bottom: 5px;
+    /* Ajusta el margen inferior de las etiquetas según tus preferencias */
+}
+
+input {
+    width: 100%;
+    /* Hace que los campos de entrada ocupen todo el ancho del contenedor */
+    padding: 10px;
+    /* Ajusta el espaciado interior de los campos de entrada según tus preferencias */
+    margin: 5px 0;
+    /* Ajusta el margen superior e inferior de los campos de entrada según tus preferencias */
+    border: 1px solid #ccc;
+    /* Agrega un borde a los campos de entrada */
+    border-radius: 5px;
+    /* Agrega esquinas redondeadas a los campos de entrada */
+}
+
+/* Estilos para el botón de envío */
+.boton-formulario {
+    background-color: #007bff;
+    /* Cambia el color de fondo del botón según tus preferencias */
+    color: #fff;
+    /* Cambia el color del texto del botón según tus preferencias */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    
+    /* Ajusta el margen superior del botón según tus preferencias */
+}
+
+/* Estilos para hacer el formulario responsive */
+@media (max-width: 768px) {
+    form {
+        max-width: 100%;
+        /* Para ocupar todo el ancho en dispositivos móviles */
+    }
+
+    input {
+        width: 100%;
+        /* Hace que los campos de entrada ocupen todo el ancho en dispositivos móviles */
+    }
+}

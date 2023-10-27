@@ -1,0 +1,15 @@
+.contenedor-nosotros {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.titulo-nosotros{
+font-size: 40px;
+text-align: center;
+}
+
+.texto-nosotros {
+    text-align: center;
+    color: black;
+    font-size: 30px;
+}

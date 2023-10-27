@@ -6,7 +6,7 @@
   font-family: Arial, sans-serif;
 }
 
-.contenedor-contador > div {
+.contenedor-contador>div {
   display: flex;
   align-items: center;
   margin: 10px;
@@ -23,7 +23,11 @@
   font-weight: bold;
   padding: 10px 20px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: 0.3s ease;
+
+  font-family: Arial, sans-serif;
+  text-decoration: none;
+
 }
 
 .resta-contador:hover,
@@ -54,7 +58,7 @@
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   margin-bottom: 20px;
- 
+
 }
 
 @media (max-width: 768px) {

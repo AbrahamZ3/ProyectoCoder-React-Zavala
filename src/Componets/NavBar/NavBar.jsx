@@ -1,7 +1,7 @@
 import "./NavBar.css";
 import { CardWidget } from "./CardWidget";
 import { Link } from "react-router-dom";
-// import { NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 
 export function NavBar() {
@@ -26,11 +26,8 @@ export function NavBar() {
             <li className="navegacion__enlace">
               <Link to="/nosotros">Nosotros</Link>
             </li>
-
             <li className="navegacion__enlace categorias">
-
               Categorias
-
               <ul className="menu-categorias">
                 <li> <Link className="navegacion__enlace-categoria" to="/category/Rosas">Rosas</Link> </li>
                 <li> <Link className="navegacion__enlace-categoria" to="/category/Tulipanes">Tulipanes</Link> </li>
@@ -38,16 +35,12 @@ export function NavBar() {
                 <li> <Link className="navegacion__enlace-categoria" to="/category/Girasoles">Girasoles</Link> </li>
               </ul>
             </li>
-
           </ul>
           <div className="carrito">
-            <CardWidget />
+            <NavLink to='/cart'>  <CardWidget /></NavLink>
           </div>
         </nav>
-
-
       </div>
-
     </>
   );
 };

@@ -91,19 +91,19 @@ const productoFlores = [
     },
 ];
 
-export const getData = () => {
+// export const getData = () => {
 
-    let error = false
+//     let error = false
 
-    return new Promise((resuelve, rechaza) => {
+//     return new Promise((resuelve, rechaza) => {
 
-        setTimeout(() => {
+//         setTimeout(() => {
 
-            if (error) {
-                rechaza("Hubo error, intente mas tarde")
-            } else{
-                resuelve(productoFlores)
-            }
-        }, 1000);
-    });
-}
+//             if (error) {
+//                 rechaza("Hubo error, intente mas tarde")
+//             } else{
+//                 resuelve(productoFlores)
+//             }
+//         }, 1000);
+//     });
+// }

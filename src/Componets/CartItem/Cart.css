@@ -1,0 +1,126 @@
+.contenedor-carrito {
+    display: flex;
+    margin: 10px auto;
+    padding: 10px;
+    border: 5px solid #ccc;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(198, 173, 148);
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+@media (max-width: 768px) {
+    .contenedor-carrito {
+        width: 90%;
+        text-align: center;
+
+    }
+}
+
+@media (max-width: 768px) {
+    .datos-carrito {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .boton-eliminarProducto {
+        width: 90%;
+        flex-direction: column;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+
+.imagen-carrito {
+    width: 200px;
+    height: 200px;
+    margin-right: 10px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.datos-carrito {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    width: 100%;
+
+}
+
+
+.boton-eliminarProducto {
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px;
+    align-items: center;
+}
+
+.total-carrito {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.botones-vaciarTerminar {
+    display: flex;
+    justify-content: center;
+}
+
+.boton-vaciarCarrito,
+.boton-terminarCompra {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.boton-vaciarCarrito:hover {
+    background-color: #ff0000;
+}
+
+.boton-terminarCompra:hover {
+    background-color: green;
+}
+
+
+.titulo-carritoVacio {
+    font-size: 25px;
+
+    text-align: center;
+}
+
+.link-irComprar {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    text-decoration: none;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    width: 20%;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .link-irComprar {
+        width: 100%;
+    }
+
+}
+
+.link-irComprar:hover {
+    background-color: #0056b3;
+}

@@ -2,7 +2,7 @@ import "./StylesIDC/ItemCount.css";
 import { useState } from "react";
 
 
-const ItemCount = ({ inicial, stock, onAdd }) => {
+const ItemCount = ({ inicial, stock, onAdd, }) => {
 
     const [numero, setNumero] = useState(inicial);
 
@@ -18,9 +18,9 @@ const ItemCount = ({ inicial, stock, onAdd }) => {
         }
     }
 
-    const addToCart = () => {
-        onAdd(numero)
-    }
+    // const addToCart = () => {
+    //     onAdd(numero)
+    // }
 
     return (
         <>
@@ -31,7 +31,7 @@ const ItemCount = ({ inicial, stock, onAdd }) => {
                     <button className="suma-contador" onClick={suma}>+</button>
                 </div>
                 <div>
-                    <button className="boton-agregar" onClick={addToCart} disabled={numero === 0} > Agregar al carrito </button>
+                    <button className="boton-agregar" disabled={numero === 0} onClick={() => onAdd(numero)}> Agregar al carrito </button>
                 </div>
             </div>
 
